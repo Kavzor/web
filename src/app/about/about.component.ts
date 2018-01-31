@@ -11,9 +11,9 @@ export class AboutComponent implements OnInit {
       url: 'assets/images/main/profile.jpg',
      width: 128
     }
-  }
+  };
 
-  profileImage: string; 
+  profileImage: string;
 
   constructor() { }
 

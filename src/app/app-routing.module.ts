@@ -6,13 +6,13 @@ import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
   {
-    path: "home", component: AboutComponent
+    path: 'home', component: AboutComponent
   },
   {
-    path: "projects", component: ProjectsComponent
+    path: 'projects', component: ProjectsComponent
   },
   {
-    path: "gallery", component: GalleryComponent
+    path: 'gallery', component: GalleryComponent
   }
 ];
 

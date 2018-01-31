@@ -6,10 +6,6 @@ import { Directive, ElementRef } from '@angular/core';
 export class PageTurnerDirective {
   section: HTMLDivElement;
 
-  constructor(private element: ElementRef) {
-    console.log("hello");
-    element.nativeElement.scroll(200);
-    //this.section.scroll
-   }
+  constructor(private element: ElementRef) { }
 
 }
