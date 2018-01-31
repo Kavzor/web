@@ -1,0 +1,16 @@
+nav > a {
+  color: #4824D7;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}

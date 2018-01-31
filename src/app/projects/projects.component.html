@@ -1,0 +1,45 @@
+<header class="container mt-3">
+  <h2>
+    Latest update
+  </h2>
+</header>
+
+<div class="container mt-2 p-3">
+  <section class="card ">
+    <h3 class="card-header">
+      {{ latest.name }}
+    </h3>
+    <div class="col-lg-10 card-body media">
+      <div class="meadia-body">
+        <p class="card-text">
+            {{ latest.description }}
+        </p>
+      </div>
+      <figure class="ml-5" >
+        <img class="figure-image" alt="MongoJ Repo" width="96" [src]="latest.icon">
+        <figcaption class="figure-caption text-center">MongoJ</figcaption>
+      </figure>
+    </div>
+    <footer class="card-footer">
+        <a [href]="latest.more">Read more..</a>
+    </footer>
+  </section>
+</div>
+
+<article class="container mt-5 p-3 bg-white rounded">
+  <h2>
+    All projects
+  </h2>
+  <hr>
+
+  <section class="container mt-2 p-3">
+      <h3>
+        Teachers Web
+      </h3>
+
+      <div>
+
+      </div>
+  </section>    
+
+</article>  
