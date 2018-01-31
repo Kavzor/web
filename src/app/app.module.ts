@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { PageTurnerDirective } from './directive/page-turner.directive';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     AppComponent,
     AboutComponent,
     ProjectsComponent,
-    GalleryComponent
+    GalleryComponent,
+    PageTurnerDirective
   ],
   imports: [
     BrowserModule,

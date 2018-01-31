@@ -1,45 +1,73 @@
-<header class="container mt-3">
-  <h2>
-    Latest update
-  </h2>
-</header>
+<article>
+  <header class="container mt-3">
+    <h2>
+      Latest update
+    </h2>
+  </header>
 
-<div class="container mt-2 p-3">
-  <section class="card ">
-    <h3 class="card-header">
-      {{ latest.name }}
-    </h3>
-    <div class="col-lg-10 card-body media">
-      <div class="meadia-body">
-        <p class="card-text">
-            {{ latest.description }}
-        </p>
+  <div class="container mt-2 p-3">
+    <section class="card">
+      <header class="card-header media">
+        <div class="media-body">
+          <h3>
+            {{ latest.name }}
+          </h3>
+        </div>
+        <figure class="status-icon">
+          <img alt="open source" src="assets/images/icon/open.svg" width="128">
+        </figure>
+        <figure class="status-icon">
+          <img alt="open source" src="assets/images/icon/progress.svg" width="128">
+        </figure>
+      </header>
+      <div class="col-lg-10 card-body media">
+        <div class="meadia-body">
+          <p class="card-text">
+              {{ latest.description }}
+          </p>
+        </div>
+        <figure class="ml-5" >
+          <img class="figure-image" alt="MongoJ Repo" width="96" [src]="latest.icon">
+          <figcaption class="figure-caption text-center">MongoJ</figcaption>
+        </figure>
       </div>
-      <figure class="ml-5" >
-        <img class="figure-image" alt="MongoJ Repo" width="96" [src]="latest.icon">
-        <figcaption class="figure-caption text-center">MongoJ</figcaption>
-      </figure>
-    </div>
-    <footer class="card-footer">
-        <a [href]="latest.more">Read more..</a>
-    </footer>
-  </section>
-</div>
+      <footer class="card-footer media">
+        <div class="media-body mt-3">
+          <a [href]="latest.more">Read more..</a>
+        </div>
+        <figure>
+          <a href="https://github.com/kavzor" target="_blank">
+            <img alt="github" src="assets/images/logo/external/Octocat.png" width="48" title="Go to my github">
+          </a>
+          <a href="https://www.linkedin.com/in/jakob-r-975737145/" target="_blank">
+            <img alt="linkedin" src="assets/images/logo/external/Linkedin.png" width="128" title="Visit my linkedin page!">
+          </a>
+        </figure>
+      </footer>
+    </section>
+  </div>
+</article>
 
-<article class="container mt-5 p-3 bg-white rounded">
-  <h2>
-    All projects
-  </h2>
-  <hr>
+<article class="mt-3">
+  <header class="container">
+    <h2>
+      All projects
+    </h2>
+  </header>
 
-  <section class="container mt-2 p-3">
-      <h3>
-        Teachers Web
-      </h3>
-
-      <div>
+  <div class="container mt-2 p-3">
+    <section class="card">
+      <header class="card-header">
+        <h3>
+          Teachers Web
+        </h3>
+      </header>  
+      <div class="card-body">
 
       </div>
-  </section>    
-
+      <footer class="card-footer">
+        <a href="#">Read more..</a>
+      </footer>
+    </section>  
+  </div>  
 </article>  
