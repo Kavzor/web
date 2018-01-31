@@ -6,7 +6,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
   {
-    path: "", component: AboutComponent
+    path: "home", component: AboutComponent
   },
   {
     path: "projects", component: ProjectsComponent
