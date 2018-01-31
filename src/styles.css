@@ -4,6 +4,6 @@ body {
   background-image: url("assets/images/main/background-dark.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 200px;
+  min-height: 800px;
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
