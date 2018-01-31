@@ -107,7 +107,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var routes = [
     {
-        path: "", component: __WEBPACK_IMPORTED_MODULE_2__about_about_component__["a" /* AboutComponent */]
+        path: "home", component: __WEBPACK_IMPORTED_MODULE_2__about_about_component__["a" /* AboutComponent */]
     },
     {
         path: "projects", component: __WEBPACK_IMPORTED_MODULE_3__projects_projects_component__["a" /* ProjectsComponent */]
@@ -153,7 +153,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n\n<nav class=\"navbar navbar-expand navbar-dark bg-dark\">\n  <a class=\"navbar-brand\" href=\"\">\n    <img class=\"rounded\" src=\"assets/images/logo/main.png\" width=\"64px\" >\n    Kavzor\n  </a>\n  <div class=\"ml-auto mr-5\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"/\">About</a>\n      </li>\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"projects\">Projects</a>\n      </li>\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"gallery\">Gallery</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n\n<router-outlet></router-outlet>\n\n\n<footer class=\"bg-dark text-white \">\n  <small>For more information or interest, contact <a href=\"mailto:kavzor@gmail.com\">kavzor@gmail.com</a></small>\n</footer>\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n\n<nav class=\"navbar navbar-expand navbar-dark bg-dark\">\n  <a class=\"navbar-brand\" href=\"\">\n    <img class=\"rounded\" src=\"assets/images/logo/main.png\" width=\"64px\" >\n    Kavzor\n  </a>\n  <div class=\"ml-auto mr-5\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"home\">About</a>\n      </li>\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"projects\">Projects</a>\n      </li>\n      <li class=\"nav-item\" routerLinkActive=\"active\">\n        <a class=\"nav-link\" routerLink=\"gallery\">Gallery</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n\n<router-outlet></router-outlet>\n\n\n<footer class=\"bg-dark text-white \">\n  <small>For more information or interest, contact <a href=\"mailto:kavzor@gmail.com\">kavzor@gmail.com</a></small>\n</footer>\n"
 
 /***/ }),
 
