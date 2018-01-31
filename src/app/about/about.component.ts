@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
   profile = {
     image: {
-      url: '/assets/images/main/profile.jpg',
+      url: 'assets/images/main/profile.jpg',
      width: 128
     }
   }
