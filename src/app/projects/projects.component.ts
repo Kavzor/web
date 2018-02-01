@@ -32,7 +32,7 @@ export class ProjectsComponent implements OnInit {
       image: {
         icon: '',
         status: {
-          MIT: true,
+          MIT: false,
           open: true,
           progress: true
         }
