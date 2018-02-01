@@ -41,8 +41,8 @@ export class ProjectsComponent implements OnInit {
     {
       info : {
         name: 'Teachers Web',
-        description: 'This project is being launched to help shy students who won\t dare asking their questions \
-        in a filled classroom. It also happens to be the first real-time project that I plan to publish, so let\s see \
+        description: 'This project is being launched to help shy students who are too afraid to speak out loud \
+        in a full classroom. It also happens to be the first real-time project that I plan to publish, so let\s see \
         how this goes'
       },
       publish: {
