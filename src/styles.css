@@ -5,5 +5,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 800px;
+  padding-bottom: 100px;
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }

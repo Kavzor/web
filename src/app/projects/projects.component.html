@@ -17,11 +17,14 @@
           <img alt="open source" src="assets/images/icon/open.svg" width="128">
         </figure>
         <figure class="status-icon">
-          <img alt="open source" src="assets/images/icon/progress.svg" width="128">
+          <img alt="work in progress" src="assets/images/icon/progress.svg" width="128">
+        </figure>
+        <figure class="status-icon">
+          <img alt="MIT Lisenced" src="assets/images/icon/mit.svg" width="128">
         </figure>
       </header>
       <div class="col-lg-10 card-body media">
-        <div class="meadia-body">
+        <div class="media-body">
           <p class="card-text">
               {{ latest.description }}
           </p>
@@ -33,7 +36,7 @@
       </div>
       <footer class="card-footer media">
         <div class="media-body mt-3">
-          <a [href]="latest.more">Read more..</a>
+          <a [href]="latest.more">View source..</a>
         </div>
         <figure>
           <a href="https://github.com/kavzor" target="_blank">
@@ -55,18 +58,29 @@
     </h2>
   </header>
 
-  <div class="container mt-2 p-3">
-    <section class="card">
-      <header class="card-header">
-        <h3>
-          Teachers Web
+  <div class="container p-3">
+    <section class="card mt-5" *ngFor="let entry of entries">
+      <header class="card-header media">
+        <h3 class="media-body">
+          {{ entry.info.name }}
         </h3>
+        <figure class="status-icon">
+          <img class="mr-2" *ngIf="entry.image.status.progress" alt="work in progress" src="assets/images/icon/progress.svg" width="128">
+          <img *ngIf="entry.image.status.open" alt="open source" src="assets/images/icon/open.svg" width="128">
+          <img *ngIf="entry.image.status.MIT" alt="MIT Lisenced" src="assets/images/icon/mit.svg" width="128">
+        </figure>
       </header>  
-      <div class="card-body">
-
+      <div class="card-body col-lg-10 media">
+        <div class="media-body">
+          {{ entry.info.description }}
+        </div>
+        <figure class="ml-5">
+          <img [alt]="entry.info.name + ' icon'" width=96>
+        </figure>
       </div>
       <footer class="card-footer">
-        <a href="#">Read more..</a>
+        <a [href]="entry.publish.more">View source..</a>
+        <a href="projects" class="float-right">Back to top</a>
       </footer>
     </section>  
   </div>  
