@@ -49,7 +49,7 @@ export class ProjectsComponent implements OnInit {
         url: ''
       },
       image: {
-        icon: '',
+        icon: 'assets/images/logo/projects/TeachersWeb.svg',
         status: {
           MIT: false,
           open: false,

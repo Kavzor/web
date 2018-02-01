@@ -75,7 +75,10 @@
           {{ entry.info.description }}
         </div>
         <figure class="ml-5">
-          <img [alt]="entry.info.name + ' icon'" width=96>
+          <img [src]="entry.image.icon" [alt]="entry.info.name + ' icon'" width=96>
+          <figcaption class="figure-caption text-center">
+            {{ entry.info.name }}
+          </figcaption>
         </figure>
       </div>
       <footer class="card-footer">
