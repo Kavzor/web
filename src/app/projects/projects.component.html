@@ -13,14 +13,10 @@
             {{ latest.name }}
           </h3>
         </div>
-        <figure class="status-icon">
-          <img alt="open source" src="assets/images/icon/open.svg" width="128">
-        </figure>
-        <figure class="status-icon">
-          <img alt="work in progress" src="assets/images/icon/progress.svg" width="128">
-        </figure>
-        <figure class="status-icon">
-          <img alt="MIT Lisenced" src="assets/images/icon/mit.svg" width="128">
+        <figure class="status-icon" >
+          <img alt="open source" *ngIf="latest.image.state.openSource" src="assets/images/icon/open.svg" width="128">
+          <img alt="work in progress" *ngIf="latest.image.state.inProgress" src="assets/images/icon/progress.svg" width="128">
+          <img alt="MIT Lisenced" *ngIf="latest.image.state.mit" src="assets/images/icon/mit.svg" width="128">
         </figure>
       </header>
       <div class="col-lg-10 card-body media">
@@ -30,13 +26,13 @@
           </p>
         </div>
         <figure class="ml-5" >
-          <img class="figure-image" alt="MongoJ Repo" width="96" [src]="latest.icon">
+          <img class="figure-image" alt="MongoJ Repo" width="96" [src]="latest.image.icon">
           <figcaption class="figure-caption text-center">MongoJ</figcaption>
         </figure>
       </div>
       <footer class="card-footer media">
         <div class="media-body mt-3">
-          <a [href]="latest.more">View source..</a>
+          <a [href]="latest.reference">View source..</a>
         </div>
         <figure>
           <a href="https://github.com/kavzor" target="_blank">
@@ -62,27 +58,27 @@
     <section class="card mb-5" *ngFor="let entry of entries">
       <header class="card-header media">
         <h3 class="media-body">
-          {{ entry.info.name }}
+          {{ entry.name }}
         </h3>
         <figure class="status-icon">
-          <img class="mr-2" *ngIf="entry.image.status.progress" alt="work in progress" src="assets/images/icon/progress.svg" width="128">
-          <img *ngIf="entry.image.status.open" alt="open source" src="assets/images/icon/open.svg" width="128">
-          <img *ngIf="entry.image.status.MIT" alt="MIT Lisenced" src="assets/images/icon/mit.svg" width="128">
+          <img class="mr-2" *ngIf="entry.image.state.inProgress" alt="work in progress" src="assets/images/icon/progress.svg" width="128">
+          <img *ngIf="entry.image.state.openSource" alt="open source" src="assets/images/icon/open.svg" width="128">
+          <img *ngIf="entry.image.state.mit" alt="MIT Lisenced" src="assets/images/icon/mit.svg" width="128">
         </figure>
       </header>  
       <div class="card-body col-lg-10 media">
         <div class="media-body">
-          {{ entry.info.description }}
+          {{ entry.description }}
         </div>
-        <figure class="ml-5">
-          <img [src]="entry.image.icon" [alt]="entry.info.name + ' icon'" width=96>
+        <figure class="ml-5" *ngIf="entry.image.icon">
+          <img [src]="entry.image.icon" [alt]="entry.name + ' icon'" width=96>
           <figcaption class="figure-caption text-center">
-            {{ entry.info.name }}
+            {{ entry.name }}
           </figcaption>
         </figure>
       </div>
       <footer class="card-footer">
-        <a [href]="entry.publish.more">View source..</a>
+        <a [href]="entry.reference">View source..</a>
         <a href="projects" class="float-right">Back to top</a>
       </footer>
     </section>  
