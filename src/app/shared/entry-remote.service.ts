@@ -9,4 +9,8 @@ export class EntryRemoteService {
   get entries(){
     return this.http.get("https://rolandsson.nu/jakob/web/entryservice.php");
   }
+
+  get latest(){
+    return this.http.get("https://rolandsson.nu/jakob/web/entryservice.php?latest");
+  }
 }

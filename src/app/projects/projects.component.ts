@@ -9,7 +9,7 @@ import { EntryRemoteService } from '../shared/entry-remote.service';
 })
 export class ProjectsComponent implements OnInit {
 
-  latest: Entry = {
+  latest: any; /*= {
     name: 'MongoJ Simplifier',
     reference: 'https://github.com/Kavzor/MongoJRepo',
     description: 'MongoJ Simplifier is meant to ease the development of mongo-backends by providing a fully configuered \
@@ -24,7 +24,7 @@ export class ProjectsComponent implements OnInit {
         openSource: true
       }
     } 
-  };
+  };*/
 /*
   entries: Entry[] = [
     {
@@ -67,5 +67,8 @@ export class ProjectsComponent implements OnInit {
     this.entryService.entries.subscribe((data) => {
       this.entries = data;
     });
+    this.entryService.latest.subscribe((data) => {
+      this.latest = data;
+    })
   }
 }
