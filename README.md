@@ -1,27 +1,5 @@
-# Kavzor
+# Kavzors Web
+I built Kavzors web because I wanted to share my in-progress projects as well as finished ones (as if you're ever done) or simply typical solutions I use for a range of different projects, such as the [MongoJ Repo](https://github.com/Kavzor/MongoJRepo) project I use for pretty much all MongoDB projects.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Behind the scene
+Kavzors web portfolio is hosted by [Github](https://github.com) whilst the backend is provided by [one.com](one.com). The most interesting about this plain/typical portfolio is that it's actually backed up by a Java desktop application, meaning that all the topics are managed remotely and not by the HTML/JS. Pictures, lisecens, text, topics etc. all managed by a remote desktop application built in JavaFX. 
